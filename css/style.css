@@ -1104,3 +1104,23 @@ header {
     text-align: center;
     padding-top: 45px;
 }
+
+
+/* extra css */
+.logo img {
+    width: 173px;
+}
+.about-me-content {
+    position: relative;
+}
+
+.about-me-content::after {
+    background: #411D53;
+    left: -10%;
+    content: "";
+    height: 100%;
+    width: 110%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
