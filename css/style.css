@@ -1459,3 +1459,20 @@ nav#navigation-menu {
 .nav li:last-child {
     padding: 0 45px;
 }
+
+header.sticky::after {
+    background: #000;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+header.sticky .logo {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}

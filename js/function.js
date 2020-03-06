@@ -252,6 +252,15 @@
 
     });
 
+    var fixed_top = $("header");
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 200) {
+            fixed_top.addClass("sticky");
+        } else {
+            fixed_top.removeClass("sticky");
+        }
+    });
+
     // Activate lightcase
     $('a[data-rel^=lightcase]').lightcase();
 
