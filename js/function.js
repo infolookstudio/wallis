@@ -212,7 +212,7 @@
             $('header').addClass('fixed-header');
         }
         else {
-            $('header').removeClass('fixed-header');
+            $('header').removeClass('fixed-headerr');
         }
         //End Sticky menu
 
