@@ -212,7 +212,7 @@
             $('header').addClass('fixed-header');
         }
         else {
-            $('header').removeClass('fixed-headerr');
+            $('header').removeClass('fixed-header');
         }
         //End Sticky menu
 
@@ -251,6 +251,9 @@
         $('#obj-22').css('top', ($(document).scrollTop() - 100) / 2.3);
 
     });
+
+    // Activate lightcase
+    $('a[data-rel^=lightcase]').lightcase();
 
     //Objects Animation On Mouse-move Effect Scripts
     $(document).mousemove(function (e) {

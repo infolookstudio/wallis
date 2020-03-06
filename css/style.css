@@ -539,13 +539,14 @@ header {
 #navigation-menu {
     position: relative;
     z-index: 999;
+    overflow: hidden;
 }
 
 .fixed-header {
     position: fixed;
     z-index: 9999;
     top: 0px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .logo {
@@ -1316,18 +1317,7 @@ header {
     color: #fff !important;
 }
 
-.fixed-header::after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background: #fff;
-    opacity: .5;
-    z-index: ;
-    border-radius: 40px;
-}
+
 
 .form-conta {
     margin-bottom: 60px;
@@ -1350,4 +1340,122 @@ header {
 
 .section-title {
     margin-bottom: 50px;
+}
+
+nav#navigation-menu::after {
+    background: #fff;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    opacity: .3;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.fixed-header {
+    margin-top: 20px;
+}
+
+nav#navigation-menu {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+}
+
+.contact-btn .icon-box {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.contact-btn .icon-box a {
+    font-size: 35px;
+    color: #ffffff91;
+    margin-left: 15px;
+}
+
+.contact-btn .icon-box img {
+    transform: translateY(4px);
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+}
+
+.contact-btn .icon-box {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.contact-btn .icon-box a {
+    font-size: 35px;
+    color: #ffffff91;
+    margin-left: 15px;
+}
+
+.contact-btn .icon-box img {
+    transform: translateY(4px);
+}
+
+.footer-social a.fb-icon {
+    background: #3F62A9;
+    color: #fff;
+}
+
+.footer-social a.twitter-icon {
+    background: #5DA9DD;
+    color: #fff;
+}
+
+.footer-social a.google-plus-icon {
+    color: #fff;
+    background: #DC483C;
+}
+
+.footer-social a:hover {
+    color: #fff;
+    background: #D51D5D !important;
+}
+
+.header-wrap {
+    position: relative;
+    z-index: 999;
+}
+.fixed-header {
+    margin-top: 0px;
+}
+
+.nav li:last-child::after {
+    background: #ffffff47;
+    border-radius: 40px;
+    margin-left: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 85%;
+    top: 4px;
+    right: 5px;
+    z-index: -1;
+}
+
+.nav li:last-child a::after {
+    display: none;
+}
+
+.nav li:last-child {
+    position: relative;
+    z-index: 1;
+}
+
+.nav li:last-child {
+    padding: 0 45px;
 }
