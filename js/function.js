@@ -262,7 +262,10 @@
     });
 
     // Activate lightcase
-    $('a[data-rel^=lightcase]').lightcase();
+    $('a[data-rel^=lightcase]').lightcase({
+        autobuffer: true,
+        autoplay: true,
+    });
 
     //Objects Animation On Mouse-move Effect Scripts
     $(document).mousemove(function (e) {
