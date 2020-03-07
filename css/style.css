@@ -1479,3 +1479,19 @@ header.sticky .logo {
     padding-bottom: 5px;
 }
 
+
+
+.grid .grid-item {
+    height: 300px;
+}
+
+.grid .grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid .grid-item .grid-hover img {
+    height: auto;
+    width: auto;
+}

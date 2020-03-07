@@ -155,10 +155,10 @@
 
     $(window).on('load', function () {
         // Gallery Grid Layout function 
-        $('.grid').masonry({
-            itemSelector: '.grid-item',
-            originTop: false,
-        });
+        // $('.grid').masonry({
+        //     itemSelector: '.grid-item',
+        //     originTop: false,
+        // });
 
         // Pre-loader Function
         setTimeout(function () {
