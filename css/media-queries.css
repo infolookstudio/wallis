@@ -437,9 +437,6 @@
 		padding-top: 0px;
 	}
 
-	.footer-social {
-		margin: 0px 0px 60px 0px;
-	}
 
 	.design-bg-color {
 		padding-top: 25px;
@@ -475,11 +472,15 @@
 	.centertop img {
 		width: 60%;
 	}
-
-	.centertop {}
 }
 
 @media screen and (max-width: 1024px) {
+	#navigation-menu {
+		overflow: inherit !important;
+	}
+	#navigation-menu .nav {
+		float: none;
+	}
 	.tp-title {
 		font-size: 45px !important;
 		margin: 0 0 0 0px !important;
@@ -909,14 +910,6 @@
 		width: 66%;
 	}
 
-	.footer-social {
-		text-align: left;
-	}
-
-	.copyright {
-		text-align: right;
-	}
-
 	.about {
 		margin-top: 160px;
 	}
@@ -1124,14 +1117,6 @@
 		margin-bottom: 30px;
 	}
 
-	.footer-social {
-		text-align: left;
-	}
-
-	.copyright {
-		text-align: left;
-	}
-
 	table {
 		width: 100%;
 	}
@@ -1197,10 +1182,6 @@
 		width: 95%;
 		top: 70px;
 		left: 214px;
-	}
-
-	.footer-social {
-		margin: 0px 0px 0px 0px;
 	}
 
 	.design-bg-color h2 {
@@ -1408,10 +1389,6 @@
 		margin-top: 40px;
 		padding-top: 0px;
 		padding-bottom: 20px;
-	}
-
-	.footer-social {
-		margin: 0px 0px 15px 0px;
 	}
 
 	.img-box {

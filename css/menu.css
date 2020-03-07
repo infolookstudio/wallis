@@ -125,6 +125,31 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .nav li:last-child {
+        padding: 0 25px !important;
+    }
+
+    .nav li:last-child::after {
+        display: none !important;
+    }
+
+    header::after {
+        background: #000;
+        height: 74px;
+        width: 100%;
+        content: "";
+        left: 0;
+        top: 0;
+        position: absolute;
+        opacity: .8;
+        z-index: -1;
+    }
+
+    .nav li a:hover::after,
+    .nav li a.active::after {
+        display: none;
+    }
+
     .toggleMenu {
         display: block;
     }
@@ -138,11 +163,22 @@
     }
 
     .nav {
-        position: absolute;
         width: 100%;
-        top: 62px;
+        top: 10px;
         left: 0;
         display: none;
+    }
+
+    nav#navigation-menu {
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        width: 140px !important;
+    }
+
+    header.sticky::after {
+        height: 74px !important;
     }
 
     .nav li {
@@ -154,6 +190,10 @@
         display: inline-block !important;
         width: 100%;
         background-color: #411d52;
+    }
+
+    #navigation-menu {
+        overflow: none !important;
     }
 
     .nav>li>a {
@@ -198,9 +238,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nav {
-        top: 60px;
-    }
 
     .nav>li>a {
         display: block;
@@ -218,13 +255,29 @@
 
 @media screen and (max-width: 480px) {
     .nav {
-        top: 48px;
+        top: -8px
+    }
+    .contact-btn {
+        flex-direction: column;
+    }
+
+    .contact-btn .icon-box {
+        margin: 0;
+        margin-top: 25px;
+    }
+
+    header::after,
+    header.sticky::after {
+        height: 58px !important;
     }
 }
 
 @media screen and (max-width: 375px) {
     .toggleMenu {
-        margin: 14px 0px 0px 0px;
+        margin: 19px 0px 0px 0px;
+    }
+    .nav {
+        top: 2px;
     }
 }
 
@@ -243,4 +296,14 @@
     width: 100%;
     height: 2px;
     background: #fff;
+}
+
+
+nav#navigation-menu::after {
+    display: none;
+}
+
+.toggleMenu {
+    position: relative;
+    z-index: 9999;
 }
