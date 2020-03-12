@@ -283,4 +283,20 @@
         $('#obj-22').css("transform", "translate3d(" + (topval * 2) + "px, 0px, 0px)");
     });
 
+    $(window).on("load", function () {
+
+        background();
+
+    });
+
+    // background image
+    function background() {
+        var img = $('.bg_img');
+        img.css('background-image', function () {
+            var bg = ('url(' + $(this).data('background') + ')');
+            return bg;
+        });
+    }
+
+
 })(jQuery);
