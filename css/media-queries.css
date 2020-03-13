@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 @media screen and (max-width: 2560px) {
@@ -1521,6 +1521,9 @@
 }
 
 @media screen and (max-width: 375px) {
+	.small-img img { 
+		min-height: 300px;
+	}
 	.next-overflow-img {
 		left: 107px;
 	}

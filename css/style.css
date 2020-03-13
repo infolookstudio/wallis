@@ -363,8 +363,6 @@ h6 span {
     color: #fff;
 }
 
-h1 {}
-
 h2 {
     font-size: 72px;
     line-height: 80px;
@@ -1581,4 +1579,14 @@ a:hover {
 
 img {
     max-width: 100%;
+}
+
+.wallis-content .container {
+    max-width: 1200px;
+}
+
+.small-img img {
+    min-height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
 }
